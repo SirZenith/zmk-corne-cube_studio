@@ -42,18 +42,17 @@
 	compatible = "nordic,nrf-twi";
     pinctrl-0 = <&i2c0_default>;
     pinctrl-1 = <&i2c0_sleep>;
-	dongle_oled: sh1106@3c {
+    dongle_oled: ssd1306fb@3c {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
-        segment-offset = <0x2>;
+        segment-offset = <2>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
         segment-remap;
         com-invdir;
-        inversion-on;
         prechargep = <0x22>;
-	};
+    };
 };
