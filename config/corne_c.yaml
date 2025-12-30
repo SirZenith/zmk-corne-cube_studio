@@ -1,50 +1,21 @@
 layout: {zmk_keyboard: corne_c}
 layers:
-  '0':
-  - ESCAPE
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - BACKSPACE
-  - LSHFT
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - LCTRL
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - DELETE
-  - LEFT ALT
-  - {t: LEFT GUI, h: '3'}
-  - {t: SPACE, h: '1'}
-  - ENTER
-  - '2'
-  - RIGHT WIN
-  '1':
+  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, ESCAPE, LCTRL, A, S, D, F, G, H, J, K, L, ;, RETURN, LEFT ALT, Z, X, C, V, B, N, M, ',', ., /, RIGHT GUI, l_primer,
+    LEFT SHIFT, SPACE, BACKSPACE, RSHIFT, r_primer]
+  l_primer:
+  - ''
+  - ''
+  - ''
+  - ''
   - \
+  - '-'
+  - Sft+^
+  - Sft+&
+  - Sft+*
+  - Sft+(
+  - Sft+)
+  - DEL
+  - ESC
   - '1'
   - '2'
   - '3'
@@ -55,120 +26,237 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
-  - LSHFT
-  - A
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '['
-  - ']'
-  - '|'
-  - LCTRL
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ','
-  - .
-  - '-'
   - '='
-  - LEFT ALT
-  - LEFT GUI
-  - {t: SPACE, type: held}
-  - RET
-  - RIGHT ALT
-  - RIGHT GUI
-  '2':
-  - TAB
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - BSPC
-  - LCTRL
+  - media
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - ''''
+  - Sft+"
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
-  - '`'
-  - LSHFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - LEFT GUI
-  - LSHFT
+  - F11
+  - {type: held}
+  - LALT
   - SPACE
-  - ENTER
-  - {t: RIGHT COMMAND, type: held}
-  - RIGHT GUI
-  '3':
-  - '&sys_reset'
+  - SPACE
+  - RALT
+  - Sft+~
+  r_primer:
+  - '~'
+  - Sft+!
+  - Sft+@
+  - Sft+#
+  - Sft+$
+  - Sft+%
+  - Sft+_
+  - +
+  - Sft+|
   - ''
   - ''
   - ''
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - CAPS
+  - F12
+  - ''
+  - '['
+  - ']'
+  - Sft+{
+  - Sft+}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - media
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
-  - KP 7
-  - KP 8
-  - KP 9
   - ''
-  - ''
-  - ''
-  - LSHFT
+  - {type: held}
+  media:
+  - BRIGHTNESS INC
+  - VOLUME UP
+  - PREVIOUS
+  - UP ARROW
+  - NEXT
+  - PAGE UP
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - KP 4
-  - KP 5
-  - KP 6
-  - ''
-  - UP
-  - ''
-  - LCTRL
-  - BT CLR
-  - ''
-  - ''
-  - ''
-  - BT CLR ALL
-  - KP 1
-  - KP 2
-  - KP 3
+  - OUT TOG
+  - BRIGHTNESS DEC
+  - VOLUME DOWN
   - LEFT
   - DOWN
   - RIGHT
-  - LEFT ALT
-  - {t: LEFT GUI, type: held}
+  - PAGE DOWN
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
+  - ''
+  - ''
+  - {type: held}
+  - MUTE
+  - HOME
+  - PLAY PAUSE
+  - END
+  - INSERT
+  - '&prev_desktop'
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - '&next_desktop'
+  - ''
+  - BT CLR
+  - {type: held}
+  - RIGHT GUI
+  - PRINTSCREEN
+  - ''
+  - RIGHT GUI
+  - ''
+  '4':
+  - ESCAPE
+  - ''
+  - ''
+  - UP ARROW
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - A
+  - LEFT ARROW
+  - DOWN
+  - RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - S
+  - D
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - SPACE
-  - '0'
-  - '0'
-  - KP DOT
+  - ''
+  - ''
+  - ''
+  '5':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  '6':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
