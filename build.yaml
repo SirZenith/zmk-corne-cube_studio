@@ -23,7 +23,9 @@ include:
     shield: corne_c_left nice_view_adapter nice_view_gem
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: corne_c_left
   - board: nice_nano
     shield: corne_c_right nice_view_adapter nice_view_gem
+    artifact-name: corne_c_right
   - board: nice_nano
     shield: settings_reset

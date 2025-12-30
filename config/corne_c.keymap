@@ -20,14 +20,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LG(LEFT_ARROW))>;
-            label = "PREV_DESKTOP";
+            display-name = "PREV_DESKTOP";
         };
 
         next_desktop: next_desktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(LG(RIGHT_ARROW))>;
-            label = "NEXT_DESKTOP";
+            display-name = "NEXT_DESKTOP";
         };
     };
 
@@ -42,7 +42,7 @@
                             &mo 1  &kp LEFT_SHIFT  &kp SPACE    &kp BACKSPACE  &kp RSHIFT  &mo 2
             >;
 
-            label = "DEF";
+            display-name = "DEF";
         };
 
         l_primer {
@@ -53,7 +53,7 @@
                          &none   &kp LALT       &kp SPACE    &kp SPACE      &kp RALT      &kp LS(TILDE)
             >;
 
-            label = "LP";
+            display-name = "LP";
         };
 
         r_primer {
@@ -64,7 +64,7 @@
                                      &trans         &trans        &none            &none          &none     &none
             >;
 
-            label = "RP";
+            display-name = "RP";
         };
 
         media {
@@ -75,7 +75,7 @@
                                                          &none             &kp RIGHT_GUI  &kp PRINTSCREEN    &none           &kp RIGHT_GUI   &none
             >;
 
-            label = "MED";
+            display-name = "MED";
         };
 
         layer_4 {
