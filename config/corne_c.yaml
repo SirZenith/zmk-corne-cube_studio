@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: corne_c}
 layers:
-  default: [TAB, Q, W, E, R, T, Y, U, I, O, P, ESCAPE, LCTRL, A, S, D, F, G, H, J, K, L, ;, RETURN, LEFT ALT, Z, X, C, V, B, N, M, ',', ., /, RIGHT GUI, l_primer,
-    LEFT SHIFT, SPACE, BACKSPACE, RSHIFT, r_primer]
-  l_primer:
+  DEF: [TAB, Q, W, E, R, T, Y, U, I, O, P, ESCAPE, LCTRL, A, S, D, F, G, H, J, K, L, ;, RETURN, LEFT ALT, Z, X, C, V, B, N, M, ',', ., /, RIGHT GUI, LP, LEFT SHIFT,
+    SPACE, BACKSPACE, RSHIFT, RP]
+  LP:
   - ''
   - ''
   - ''
@@ -27,7 +27,7 @@ layers:
   - '9'
   - '0'
   - '='
-  - media
+  - MED
   - F1
   - F2
   - F3
@@ -45,7 +45,7 @@ layers:
   - SPACE
   - RALT
   - Sft+~
-  r_primer:
+  RP:
   - '~'
   - Sft+!
   - Sft+@
@@ -81,14 +81,14 @@ layers:
   - F8
   - F9
   - F10
-  - media
+  - MED
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - {type: held}
-  media:
+  MED:
   - BRIGHTNESS INC
   - VOLUME UP
   - PREVIOUS
@@ -132,23 +132,6 @@ layers:
   - RIGHT GUI
   - ''
   '4':
-  - ESCAPE
-  - ''
-  - ''
-  - UP ARROW
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: default, h: toggle}
-  - ''
-  - A
-  - LEFT ARROW
-  - DOWN
-  - RIGHT
   - ''
   - ''
   - ''
@@ -159,8 +142,8 @@ layers:
   - ''
   - ''
   - ''
-  - S
-  - D
+  - ''
+  - {t: DEF, h: toggle}
   - ''
   - ''
   - ''
@@ -170,7 +153,24 @@ layers:
   - ''
   - ''
   - ''
-  - SPACE
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -186,7 +186,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: default, h: toggle}
+  - {t: DEF, h: toggle}
   - ''
   - ''
   - ''
@@ -229,7 +229,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: default, h: toggle}
+  - {t: DEF, h: toggle}
   - ''
   - ''
   - ''
