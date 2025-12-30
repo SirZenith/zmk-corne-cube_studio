@@ -1,19 +1,23 @@
 manifest:
   remotes:
-  - name: zmkfirmware
-    url-base: https://github.com/zmkfirmware
-  # Custom
-  - name: sirzenith
-    url-base: https://github.com/SirZenith
-
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    # -------------------------------------------------------------------------
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
+    - name: sirzenith
+      url-base: https://github.com/SirZenith
   projects:
-  - name: zmk
-    remote: zmkfirmware
-    revision: main
-    import: app/west.yml
-  # Custom
-  - name: nice-view-gem
-    remote: sirzenith
-    revision: main
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    # -------------------------------------------------------------------------
+    - name: nice-view-gem
+      remote: sirzenith
+      revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: main
   self:
     path: config

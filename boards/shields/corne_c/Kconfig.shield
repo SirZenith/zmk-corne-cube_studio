@@ -4,3 +4,6 @@ config SHIELD_CORNE_C_LEFT
 
 config SHIELD_CORNE_C_RIGHT
     def_bool $(shields_list_contains,corne_c_right)
+
+config SHIELD_CORNE_C_DONGLE
+    def_bool $(shields_list_contains,corne_c_dongle)

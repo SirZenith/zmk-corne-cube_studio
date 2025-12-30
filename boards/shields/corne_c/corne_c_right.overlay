@@ -7,8 +7,6 @@
 #include "corne_c.dtsi"
 
 
-
-
 &default_transform {
     col-offset = <6>;
 };
@@ -18,6 +16,13 @@
 };
 
 &kscan0 {
+    compatible = "zmk,kscan-gpio-matrix";
+    row-gpios
+        = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        ;
     col-gpios
         = <&pro_micro 14 GPIO_ACTIVE_HIGH>
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
