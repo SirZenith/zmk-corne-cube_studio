@@ -8,24 +8,23 @@ if SHIELD_CORNE_C_DONGLE
 
 endif
 
-# Uncomment to enable standalone mode
-# if SHIELD_CORNE_C_LEFT
+if SHIELD_CORNE_C_LEFT
 
-    # config ZMK_KEYBOARD_NAME
-        # default "Corne C"
+    config ZMK_KEYBOARD_NAME
+        default "Corne C"
 
-    # config ZMK_SPLIT_ROLE_CENTRAL
-        # default y
-# endif
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+endif
 
-if SHIELD_CORNE_C_LEFT || SHIELD_CORNE_C_RIGHT
+if SHIELD_CORNE_C_LEFT_PERIPHERAL || SHIELD_CORNE_C_RIGHT
 
     config ZMK_SPLIT_ROLE_CENTRAL
         default n
 
 endif
 
-if SHIELD_CORNE_C_DONGLE || SHIELD_CORNE_C_LEFT || SHIELD_CORNE_C_RIGHT
+if SHIELD_CORNE_C_LEFT || SHIELD_CORNE_C_RIGHT || SHIELD_CORNE_C_LEFT_PERIPHERAL || SHIELD_CORNE_C_DONGLE
 
     config ZMK_SPLIT
         default y
