@@ -21,15 +21,15 @@
 include:
   - artifact-name: corne_c_left
     board: nice_nano
-    shield: corne_c_left # nice_view_adapter nice_view_gem
-    snippet: studio-rpc-usb-uart
+    shield: corne_c_left nice_view_adapter nice_view_gem
+    snippet: studio-rpc-usb-uart # zmk-usb-logging
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - artifact-name: corne_c_left_peripheral
     board: nice_nano
-    shield: corne_c_left_peripheral # nice_view_adapter nice_view_gem
+    shield: corne_c_left_peripheral nice_view_adapter nice_view_gem
   - artifact-name: corne_c_right_peripheral
     board: nice_nano
-    shield: corne_c_right # nice_view_adapter nice_view_gem
+    shield: corne_c_right nice_view_adapter nice_view_gem
   - artifact-name: corne_c_dongle
     board: nice_nano
     shield: corne_c_dongle dongle_display
