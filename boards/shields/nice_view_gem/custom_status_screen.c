@@ -19,14 +19,14 @@ void init_central_screen_info(lv_obj_t *screen) {
     // lv_obj_align(zmk_widget_image_obj(&w_image), LV_ALIGN_TOP_RIGHT, 0, 0);
 
     zmk_widget_animation_init(&w_animation, screen);
-    lv_obj_align(zmk_widget_animation_obj(&w_animation), LV_ALIGN_TOP_LEFT, 36, 0);
+    lv_obj_align(zmk_widget_animation_obj(&w_animation), LV_ALIGN_TOP_LEFT, WALLPAPER_OFFSET, 0);
 }
 #elif IS_ENABLED(CONFIG_NICE_VIEW_GEM_INFO_PERIPHERAL)
 static struct zmk_widget_animation w_animation;
 
 void init_peripheral_screen_info(lv_obj_t *screen) {
     zmk_widget_animation_init(&w_animation, screen);
-    lv_obj_align(zmk_widget_animation_obj(&w_animation), LV_ALIGN_TOP_LEFT, 36, 0);
+    lv_obj_align(zmk_widget_animation_obj(&w_animation), LV_ALIGN_TOP_LEFT, WALLPAPER_OFFSET, 0);
 }
 #endif
 

@@ -20,6 +20,8 @@ LV_IMG_DECLARE(crystal_14);
 LV_IMG_DECLARE(crystal_15);
 LV_IMG_DECLARE(crystal_16);
 
+LV_IMG_DECLARE(wallpaper);
+
 const lv_image_dsc_t *anim_imgs[] = {
     &crystal_01, &crystal_02, &crystal_03, &crystal_04, &crystal_05, &crystal_06,
     &crystal_07, &crystal_08, &crystal_09, &crystal_10, &crystal_11, &crystal_12,
@@ -40,11 +42,11 @@ int zmk_widget_animation_init(struct zmk_widget_animation *widget, lv_obj_t *par
 #else
     lv_obj_t *obj = lv_img_create(parent);
 
-    int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]);
-    srand(k_uptime_get_32());
-    int random_index = rand() % length;
+    // int length = sizeof(anim_imgs) / sizeof(anim_imgs[0]);
+    // srand(k_uptime_get_32());
+    // int random_index = rand() % length;
 
-    lv_img_set_src(obj, anim_imgs[random_index]);
+    lv_img_set_src(obj, &wallpaper);
 #endif
 
     widget->obj = obj;

@@ -2,6 +2,12 @@
 
 #include <lvgl.h>
 
+#if IS_ENABLED(CONFIG_NICE_VIEW_GEM_ANIMATION)
+#define WALLPAPER_OFFSET 36
+#else
+#define WALLPAPER_OFFSET 0
+#endif
+
 struct zmk_widget_animation {
     sys_snode_t node;
     lv_obj_t *obj;

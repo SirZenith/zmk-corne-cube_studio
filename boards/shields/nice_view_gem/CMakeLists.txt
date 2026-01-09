@@ -3,6 +3,7 @@ if(CONFIG_ZMK_DISPLAY AND CONFIG_NICE_VIEW_WIDGET_STATUS)
     zephyr_library_sources(assets/images/icons.c)
     zephyr_library_sources(assets/fonts/pixel_operator_mono.c)
     zephyr_library_sources(assets/images/crystal.c)
+    zephyr_library_sources(assets/images/wallpaper.c)
 
     zephyr_library_sources(custom_status_screen.c)
     zephyr_library_sources(widgets/util.c)
