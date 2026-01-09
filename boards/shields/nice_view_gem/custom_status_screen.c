@@ -32,10 +32,7 @@ void init_peripheral_screen_info(lv_obj_t *screen) {
 
 lv_style_t global_style;
 
-lv_obj_t *zmk_display_status_screen() {
-    lv_obj_t *screen;
-    screen = lv_obj_create(NULL);
-
+void init_screen(lv_obj_t *screen) {
     lv_style_init(&global_style);
     lv_style_set_bg_color(&global_style, COLOR_BACKGROUND);
     lv_style_set_bg_opa(&global_style, LV_OPA_COVER);
@@ -49,6 +46,15 @@ lv_obj_t *zmk_display_status_screen() {
     init_central_screen_info(screen);
 #elif IS_ENABLED(CONFIG_NICE_VIEW_GEM_INFO_PERIPHERAL)
     init_peripheral_screen_info(screen);
+#endif
+}
+
+lv_obj_t *zmk_display_status_screen() {
+    lv_obj_t *screen;
+    screen = lv_obj_create(NULL);
+
+#if IS_ENABLED(CONFIG_ZMK_DISPLAY)
+    init_screen(screen);
 #endif
 
     return screen;
